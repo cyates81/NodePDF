@@ -57,7 +57,7 @@ if (args.length < 2) {
       phantom.exit();
     } else {
       window.setTimeout(function(){
-        page.render(args[1], { format: 'pdf', quality: options.outputQuality || '80' });
+        page.render(args[2], { format: 'pdf', quality: options.outputQuality || '80' });
         console.log('success');
         phantom.exit();
       }, options.captureDelay || 400);
